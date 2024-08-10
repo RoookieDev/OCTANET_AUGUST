@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Satisfy&display=swap');
+
+
+*{
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
+    margin: 0;
+    padding: 0;
+}
+.topMenu{
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background: none;
+    display: grid;
+    align-content: center;
+    z-index: 1;
+    background: black;
+   
+}
+
+.topMenu .container{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    padding: 5px 10px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+}
+
+.topMenu .container .logo{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.topMenu .container .logo h4{
+    position: relative;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0px;
+    font-family: 'montserrat',sans-serifa;
+}
+
+.topMenu .container .searchBx{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.topMenu .container .searchBx form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: #333;
+    border-radius: 5px;
+}
+.topMenu .container .searchBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+}
+.topMenu .container .searchBx form button{
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.topMenu .container .searchBx form button:hover{
+    color: grey;
+}
+
+.topMenu .container .menu{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.topMenu .container .menu ul{
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+.topMenu .container .menu ul li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+
+}
+.topMenu .container .menu ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.topMenu .container .menu ul li a:hover{
+    color: grey;
+}
+
+/* topmenu end here====================================== */
+
+.firstPage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    padding: 20px;
+}
+
+.firstPage .container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #222;
+    padding: 0;
+    border-radius: 20px;
+}
+.firstPage .container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#333;
+    border-radius: 20px;
+    clip-path: circle(400px at 100% 50%);
+}
+
+.firstPage .container .textBx{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding: 10px 25px;
+}
+.firstPage .container .textBx h1{
+    position: relative;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.firstPage .container .textBx h1 span{
+    color: #21a480;
+}
+.firstPage .container .textBx p{
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.firstPage .container .textBx a{
+    position: relative;
+    padding: 10px 15px;
+    background-color: #006d50;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.firstPage .container .textBx a:hover{
+    background: #003f2e;
+}
+.firstPage .container .textBx a:active{
+    transform: scale(0.9);
+}
+
+.firstPage .container .imgBx{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.firstPage .container .imgBx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* firstPage end here =========================================================*/
+
+
+.cardBx{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.cardBx .cardholder{
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+.cardBx .cardholder .card{
+    background: none;
+    padding: 0;
+    text-align: left;
+    padding: 10px 20px;
+}
+.cardBx .cardholder .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    left: 0;
+    background: #2222229c;
+    border-radius: 20px;
+}
+.cardBx .cardholder .card img{
+    position: relative;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.cardBx .cardholder .card h4{
+    position: relative;
+    width: 100%;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.cardBx .cardholder .card h5{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+.cardBx .cardholder .card  p{
+    position: relative;
+    width: 100%;
+}
+
+/* cardBx end here==================================================== */
+
+.catalogue{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.catalogue .container{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    
+}
+.catalogue .container .bigImg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    
+}
+.catalogue .container .bigImg .card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none;
+    
+    border-radius: 20px;
+    padding: 20px;
+  
+}
+.catalogue .container .bigImg img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 50%;
+    transform: translate(0,-50%);
+    object-fit: contain;
+}
+.catalogue .container .bigImg .card h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 800;
+    top: 50%;
+    transform: translate(0,-50%);
+    
+}
+.catalogue .container .bigImg .card h1:nth-child(1){
+    top: 35%;
+}
+
+.catalogue .container .smallImg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+   
+   
+}
+.catalogue .container .smallImg .cardBx{
+    position: relative;
+    width: 100%;
+    height: 45%;
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.catalogue .container .smallImg .cardBx::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    right: 0;
+    height: 100%;
+    background: #111;
+    border-radius: 10px;
+
+}
+.catalogue .container .smallImg .cardBx img{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    align-items: center;
+}
+.catalogue .container .smallImg .cardBx .textBx{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px;
+    display: grid;
+    align-content: center;
+}
+.catalogue .container .smallImg .cardBx .textBx h4{
+    position: relative;
+    font-size: 2em;
+    font-weight: 800;
+}
+.catalogue .container .smallImg .cardBx .textBx p{
+    font-size: 1.4em;
+    font-family: 'quicksand';
+    font-weight: 600;
+}
+/* catalogue end here */
+
+
+
+
+/* scroll effect styling */
+
+#img1{
+    left: 100px;
+    transition: 1s;
+}
+#head1{
+    line-height: 100px;
+    transition: 1s;
+}
+
+.cardBx .cardholder .card img{
+    top: 100px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.catalogue .container .bigImg img{
+    position: relative;
+    transform: translate(0,10%);
+    opacity: 0;
+    transition: 1s;
+}
+.catalogue .container .smallImg .cardBx img{
+    left: 100px;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* catalogue end here */
+
+.services{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    background: #111;
+}
+.services .cardBx{
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+.services .cardBx .card{
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.services .cardBx .card:hover{
+    background: #222;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+}
+.services .cardBx .card i{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.services .cardBx .card h4{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.services .cardBx .card p{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    word-break: break-all;
+}
+
+/* services end here */
+
+.about{
+    position: relative;
+    width: 100%;
+    background: #111;
+    padding: 20px;
+}
+.about  video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.2;
+}
+.about .container{
+    position: relative;
+    width: 100%;
+    padding: 30px 30px;
+    background: #000000;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(1, 1, 1, 0.5);
+}
+
+.about .container .logo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about .container .logo h1{
+    position: relative;
+    font-size: 5em;
+    font-weight: 800;
+    font-family: 'montserrat',sans-serif;
+}
+.about .container .logo h4{
+    position: relative;
+    font-size: 1.4em;
+    font-weight: 400;
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+.about .container p{
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.about .container p:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.about .container .icon{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.about .container .icon a{
+    position: relative;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+    transition: 0.5s;
+}
+.about .container .icon a:hover{
+    transform: scale(1.1);
+}
