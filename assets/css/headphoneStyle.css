@@ -5,6 +5,9 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -372,36 +375,8 @@ h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
 
 
 
-/* scroll effect styling */
 
-#img1{
-    left: 100px;
-    transition: 1s;
-}
-#head1{
-    line-height: 100px;
-    transition: 1s;
-}
 
-.cardBx .cardholder .card img{
-    top: 100px;
-    opacity: 0;
-    transition: 1s;
-}
-
-.catalogue .container .bigImg img{
-    position: relative;
-    transform: translate(0,10%);
-    opacity: 0;
-    transition: 1s;
-}
-.catalogue .container .smallImg .cardBx img{
-    left: 100px;
-    opacity: 0;
-    transition: 1s;
-}
-
-/* catalogue end here */
 
 .services{
     position: relative;
@@ -526,4 +501,37 @@ h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
 }
 .about .container .icon a:hover{
     transform: scale(1.1);
+}
+
+
+
+/* about end here */
+
+/* scroll effect styling */
+
+#img1{
+    left: 100px;
+    transition: 1s;
+}
+#head1{
+    line-height: 100px;
+    transition: 1s;
+}
+
+.cardBx .cardholder .card img{
+    top: 100px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.catalogue .container .bigImg img{
+    position: relative;
+    transform: translate(0,10%);
+    opacity: 0;
+    transition: 1s;
+}
+.catalogue .container .smallImg .cardBx img{
+    left: 100px;
+    opacity: 0;
+    transition: 1s;
 }

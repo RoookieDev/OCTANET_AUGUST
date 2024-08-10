@@ -1,0 +1,82 @@
+@media (max-width:786px) {
+    .topMenu{
+        position: relative;
+        display: none;
+    }
+    .firstPage{
+        padding: 10px 20px;
+    }
+    .firstPage .container{
+        height: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .firstPage .container .textBx{
+        height: 100%;
+        padding: 40px 20px;
+    }
+
+    .firstPage .container .textBx h1{
+        font-size: 2.5em;
+    }
+    .firstPage .container::before{
+        clip-path: circle(250px at 50% 100%);
+    }
+    .firstPage .container .imgBx{
+        height: 100%;
+    }
+    #img1{
+        left: 0;
+    }
+    /* first Page end here */
+
+    .catalogue .container{
+        padding: 10px;
+    }
+    .catalogue .container .bigImg{
+        padding: 0px;
+    }
+    .catalogue .container .bigImg .card{
+        padding: 10px;
+    }
+    .catalogue .container .bigImg .card h1{
+        font-size: 2.5em;
+    }
+    .catalogue .container .bigImg img{
+        height: 500px;
+    }
+
+
+    .catalogue .container .smallImg .cardBx::before{
+        width: 80%;
+        right: 0;
+    }
+    .catalogue .container .smallImg .cardBx .textBx{
+        padding: 0;
+    }
+    .catalogue .container .smallImg .cardBx .textBx h4{
+        font-size: 1.6em;
+    }
+    .catalogue .container .smallImg .cardBx .textBx p{
+        font-size: 1.1em;
+    }
+
+
+    .about video{
+        display: none;
+    }
+    .about .container{
+        padding:20px;
+    }
+    
+    .about .container .logo h1{
+        font-size: 3em;
+    }
+    .about .container .logo h4{
+        
+        font-size: 1em;
+    }
+    .about .container p{
+        font-size: 1em;
+    }
+}
