@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
     position: relative;
     width: 100%;
     font-size: 1.8em;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0px;
@@ -401,9 +401,10 @@ h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
     cursor:pointer;
 }
 .services .cardBx .card:hover{
-    background: #222;
+    background: rgb(0, 108, 216);
     box-shadow: 10px 10px 20px rgba(0,0,0,0.9);
     transform: scale(1.05);
+    
 }
 .services .cardBx .card i{
     font-size: 3em;
@@ -497,7 +498,7 @@ h1,h2,h3,h4,h5,h6, p, a, label, .row, ul{
     padding: 5px;
     font-size: 1.5em;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .about .container .icon a:hover{
     transform: scale(1.1);
